@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My HD Wallpapers</string>
+    <string name="smwallpaper">SMWallpaper</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4101792831023955/7735283351</string>
+    <string name="banner_ad_unit_idd">ca-app-pub-4101792831023955/7735283351</string>
+    <string name="name_of_menu">Name of Menu</string>
+    <string name="feedback">FeedBack</string>
+    <string name="click_here">Click Here</string>
+    <string name="wall_category">WallPaper Categorry</string>
+</resources>

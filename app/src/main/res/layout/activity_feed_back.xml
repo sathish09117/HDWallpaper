@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#34474f"
+    tools:context=".FeedBackActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:text="Write Your Valuable FeedBack?"/>
+
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:hint="Name of the Person"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:inputType="textMultiLine"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtFeedback"
+            android:hint="FeedBack"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:met_maxCharacters="1100"
+            android:inputType="textMultiLine"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/white"
+            app:met_singleLineEllipsis="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="132dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_idd"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

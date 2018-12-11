@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#34474f"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/l1"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/l1"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_menu"
+        tools:listitem="@layout/menu_item"
+        android:scrollbars="vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_idd" />
+
+    </RelativeLayout>
+</RelativeLayout>
